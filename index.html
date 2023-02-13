@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Html project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ <link href="https://replitcss.hecker40.repl.co/replit.css" rel="stylesheet" type="text/css"/>
+  <script src="script.js"></script>
+ <script src="https://replitcss.hecker40.repl.co/replit.js"></script>
+</head>
+
+<body>
+<marquee class="Marquee" direction="up" scrollamount="4" behavior="alternate">Html project</marquee>
+<nav class="navbar">
+<ul class="nav-links">
+    <input type="checkbox" id="checkbox_toggle"/>
+    <label for="checkbox_toggle" class="hamburger">☰</label>
+    <div class="menu">
+      <li class="nav-dropdown">
+      </li>
+      <li><a href="assets/markdown/what-is-html.md">What is html</a></li>
+      <li><a href="#">About</a></li>
+      <li><a class="btn btn-primary" href="#">Link</a></li>
+    </div>
+  </ul>
+</nav>
+<marquee class="GeneratedMarquee" direction="right" scrollamount="2" behavior="alternate">Welcome</marquee>
+<div class="card">
+  <img src="assets/images/pikachu.jpg" alt="Pikachu" style="width:50%">
+  <div class="container">
+    <h4><b>How to add images to html</b></h4> 
+  <a href="#" class="buttonClass">See how to</a>
+  </div>
+</div>
+<h1>Typewriter</h1>
+
+<button class="btn btn-primary" onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Hello this is some random text idk. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lectus neque. Nam sit amet nisi purus. Pellentesque non bibendum enim, vel luctus mauris. Vivamus eu lectus ut ipsum sodales suscipit nec at massa. Nullam eleifend ipsum a eros posuere, ac cursus tellus lobortis. Praesent pellentesque, eros eget consequat placerat, erat lectus efficitur purus, vitae euismod dolor sem id erat. Vivamus ele6ty9ihkl  k
+   v   eifend quam mauris. Quisque id vulputate lacus, vitae facilisis lectus. Pellentesque mauris risus, congue id tristique vel, feugiat vitae leo. Aenean dictum at leo eu cursus.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<h2>Toggle Switch</h2>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider"></span>
+</label><br><br>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+      <h1>Sildeshow</h1>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="assets/images/entei.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="assets/images/pikachu-lets-go.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="assets/images/airzona-map.png" style="width:100%">
+</div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="assets/images/Poipole.png" style="width:100%">
+</div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+</body>
+</html>
